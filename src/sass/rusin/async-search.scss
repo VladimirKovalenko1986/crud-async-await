@@ -1,0 +1,105 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.link {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: palevioletred;
+  margin: 15px 0 0 15px;
+  display: block;
+  border-radius: 5px;
+  border: none;
+  width: fit-content;
+  margin-bottom: 50px;
+}
+
+.link:hover {
+  background-color: blue;
+  color: black;
+}
+
+.conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-input,
+.search-button {
+  width: 100%; /* Зробіть ширину елементів 100% контейнера */
+  box-sizing: border-box; /* Додаємо padding та border до обчисленої ширини */
+  margin-bottom: 10px; /* Додаємо простір між елементами */
+}
+
+.search-input {
+  width: 150px;
+  padding: 7px 10px;
+  border-radius: 5px;
+  border: 2px solid blue;
+  font-size: 16px;
+}
+
+.search-button {
+  width: 150px;
+  padding: 7px 10px;
+  border-radius: 5px;
+  border: 2px solid blue;
+  font-size: 16px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.add {
+  width: 150px;
+  padding: 7px 10px;
+  border-radius: 5px;
+  border: 2px solid blue;
+  font-size: 16px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.add:hover,
+.search-button:hover {
+  background-color: tomato;
+  border: 2px solid tomato;
+}
+
+.weather-list {
+  list-style: none;
+  margin-top: 30px;
+  width: 100%; /* Змінено на 100% */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.weather-item {
+  box-sizing: border-box; /* Додано для врахування padding та border у загальній ширині */
+  width: calc(33% - 30px); /* Ширина картки, враховуючи відступи між ними */
+  padding: 5px;
+  border: 2px solid blue;
+  border-radius: 15px;
+  margin: 0 15px 15px 0; /* Відступи між картками */
+  text-align: center;
+}
+
+.weather-img {
+  width: 100px;
+}
